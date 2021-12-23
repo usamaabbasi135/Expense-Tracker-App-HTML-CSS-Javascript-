@@ -1,8 +1,8 @@
 //graping the HTML elements to play with them and manipulate
 const balance = document.getElementById("balance");
-const addMoney = document.getElementById("add-money");
-const removeMoney = document.getElementById("remove-money");
-const transactionList = document.getElementById("transactionList");
+const incomeAmount = document.getElementById("income-amount");
+const expenseAmount = document.getElementById("expense-amount");
+const transactionList = document.getElementById("transaction-list");
 const form = document.getElementById("form");
 const text = document.getElementById("text");
 const amount = document.getElementById("amount");
@@ -89,8 +89,8 @@ function UpdateValues() {
   ).toFixed(2);
 
   balance.innerText = `${total}`;
-  addMoney.innerText = `${income}`;
-  removeMoney.innerText = `${expense}`;
+  incomeAmount.innerText = `${income}`;
+  expenseAmount.innerText = `${expense}`;
 }
 
 //update local storage
